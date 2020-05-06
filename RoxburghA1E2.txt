@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+for($x=1; $x<=6; $x++)
+{
+$result=rand(6);
+$result=int($result);
+$result++;
+print "Die roll ".$x.": ".$result."\n";
+$sum+=$result;
+}
+print "Sum total=".$sum."\n";

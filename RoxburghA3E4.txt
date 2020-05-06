@@ -1,0 +1,44 @@
+#!/usr/bin/perl
+#Russell Roxburgh - Assignment 3 - Exercise 4
+
+print "\nCreating Array with numbers 1-10.\n";
+print "\nListing the odd numbers:\n";
+
+my @array = (1,2,3,4,5,6,7,8,9,10);	#Initializes array
+
+for($x=0;$x<=@array;$x++) 		#loops through array values
+{
+
+if(@array[$x]%2==1)		#determines if array value is odd, if yes, adds to list
+{
+@oddArray[$x] = @array[$x];
+}
+				
+print @oddArray[$x]."\n";
+}
+
+print "Listing the prime numbers:\n";
+
+
+
+for($y=0; $y<=@array; $y++)	#loops through array values
+{
+$count = 0;
+for($z=2; $z<=$y/2; $z++)	#iterates through divisors
+{
+
+if(@oddArray[$y] % $z==0)	#checks divisibility
+{
+$count++;
+last;
+}
+}
+
+if($count==0)			#if not divisible by divisors, add to prime array
+{
+@primeArray[$y]=@oddArray[$y];
+print @primeArray[$y]."\n";
+}
+
+}			
+

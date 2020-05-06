@@ -1,0 +1,41 @@
+#!/usr/bin/perl
+
+
+$result=rand(6);
+$result=int($result);
+$result++;
+print "Die roll 1: ".$result."\n";
+$sum=$result;
+
+$result=rand(6);
+$result=int($result);
+$result++;
+print "Die roll 2: ".$result."\n";
+$sum+=$result;
+
+$result=rand(6);
+$result=int($result);
+$result++;
+print "Die roll 3: ".$result."\n";
+$sum+=$result;
+
+$result=rand(6);
+$result=int($result);
+$result++;
+print "Die roll 4: ".$result."\n";
+$sum+=$result;
+
+$result=rand(6);
+$result=int($result);
+$result++;
+print "Die roll 5: ".$result."\n";
+$sum+=$result;
+
+$result=rand(6);
+$result=int($result);
+$result++;
+print "Die roll 6: ".$result."\n";
+$sum+=$result;
+
+print "Sum total=".$sum."\n";
+

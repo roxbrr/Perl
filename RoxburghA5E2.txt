@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+#Russell Roxburgh - Assignment 5 - Exercise 2
+
+print "\nSubroutine Assignment\n\n";
+
+print "Enter your first number: ";	
+$variable1 = <STDIN>;			#user input 1
+chomp $variable1;
+
+print "Enter your second number: ";
+$variable2 = <STDIN>;			#user input 2
+chomp $variable2;
+
+print "Enter your third number: ";
+$variable3 = <STDIN>;			#user input 3
+chomp $variable3;
+
+sub Subroutine1{
+print "\n";
+print $variable1*$variable2*$variable3;	#multiplication of variables inside subroutine
+
+print "\n";
+}
+
+Subroutine1();

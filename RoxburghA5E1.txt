@@ -1,0 +1,32 @@
+#!/usr/bin/perl
+#Russell Roxburgh - Assignment 5 - Exercise 1
+
+print "\nSubroutine Assignment\n\n";
+print "Enter a number: ";
+
+$variable1 = <STDIN>;
+chomp $variable1;
+
+sub Subroutine1{
+print "\n";
+$variable1*=10;
+print 'Subroutine 1 Output:'.' '.$variable1;
+print "\n";
+}
+
+sub Subroutine2{
+print "\n";
+$variable1/=2;
+print 'Subroutine 2 Output:'.' '.$variable1;
+print "\n";
+}
+
+Subroutine1();
+Subroutine2();
+
+
+
+
+
+
+		

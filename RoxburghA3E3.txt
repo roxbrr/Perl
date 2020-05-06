@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+#Russell Roxburgh - Assignment 3 - Exercise 3
+
+print "\nEnter a long string: ";		
+$userString=<STDIN>;			#takes in full string
+chomp $userString;
+
+print "\nEnter a short string found inside the longer string: ";
+$userString2=<STDIN>;			#takes in sub-string
+chomp $userString2;
+
+$position=index ($userString, $userString2);  #identifies starting position of sub-string
+$position2=rindex ($userString, $userString2); 
+
+print "Using index:The inner string begins at character ".($position+1)."\n";
+print "Using rindex:The inner string begins at character ".($position2)."\n";
+
+
+

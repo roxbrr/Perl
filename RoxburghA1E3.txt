@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+$str1="We are going to roll five dice.\n";
+$str2="Die roll ";
+$str3=" was ";
+$str4="Sum total  =  ";
+$str5="\n";
+
+print $str1;
+for($x=1; $x<=5; $x++)
+{
+$result=rand(6);
+$result=int($result);
+$result++;
+print $str2.$x.$str3.$result.$str5;
+$sum+=$result;
+}
+print $str4.$sum.$str5;

@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+#Russell Roxburgh - Assignment 4 - Exercise 1
+
+
+my @array = qw( cat Dog Fish Rabbit Turtle Ferret batman goofy Lion Tiger );
+
+print "Sorted Array: ";
+my @sortedArray = sort @array;
+
+print @sortedArray;

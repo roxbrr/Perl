@@ -1,0 +1,49 @@
+#!/usr/bin/perl
+#Russell Roxburgh - Assignment 5 - Exercise 3
+
+print "\nSubroutine Assignment\n\n";
+
+print "Enter a letter: ";	
+$char1 = <STDIN>;			#user input 1
+chomp $char1;
+
+print "Press Enter to Continue.";	//user input to fill array index 0  							//and allow for use of foreach loop
+$string0 = <STDIN>;
+chomp $string0;
+
+print "Enter a string: ";
+$string1 = <STDIN>;			#user input 2
+chomp $string1;
+
+print "Enter a string: ";
+$string2 = <STDIN>;			#user input 3
+chomp $string2;
+
+print "Enter a string: ";
+$string3 = <STDIN>;			#user input 4
+chomp $string3;
+
+print "Enter a string: ";
+$string4 = <STDIN>;			#user input 5
+chomp $string4;
+
+print "Enter a string: ";
+$string5 = <STDIN>;			#user input 6
+chomp $string5;
+
+
+sub Subroutine1
+{
+print "\n";
+
+@stringArray=($string0,$string1,$string2,$string3,$string4,$string5);//add input to array
+$x;
+
+foreach $x (@stringArray)	//loop through array, adding designated characating inbetween strings
+{ print @stringArray[$x].$char1;}
+
+print "\n";
+}
+
+
+Subroutine1();

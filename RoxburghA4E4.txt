@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+#Russell Roxburgh - Assignment 4 - Exercise 4
+
+use warnings; 
+use strict; 
+
+print "Enter a string: ";
+my $string = <STDIN>;
+chomp $string;
+
+my $stringRev = reverse $string; #reverses string
+
+my @char = split("", $stringRev);
+
+print "String Reversed: ";	#prints split reversed string with hypens
+foreach my $i (@char)
+{
+print $i."-";
+}
+

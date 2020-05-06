@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+#Russell Roxburgh - Assignment 4 - Exercise 5
+
+use warnings; 
+use strict; 
+
+my @title = ("Their Greatest Hits 1971-1975", "Thriller", "Billy Joel Greatest Hits", "Led Zeppelin IV", "The Wall");
+my @releaseYr = ("1976", "1982", "1997", "2014", "1979");
+my @artist = ("The Eagles", "Michael Jackson", "Billy Joel", "Led Zeppelin", "Pink Floyd");
+
+print "Best Selling Record Album Information\n";
+
+for(my $i = 0;$i<5;$i++)
+{
+print $artist[$i].", ".$title[$i].", ".$releaseYr[$i]."\n";
+}

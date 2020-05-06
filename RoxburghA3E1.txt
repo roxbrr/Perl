@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+#Russell Roxburgh - Assignment 3 - Exercises 1 & 2
+
+$totalCount=0;			#Counts total number of primes found
+for($i=1; $i<=1000; $i++){	#outer loop to iterate numbers 1-1000
+$count=0;
+for($j=2; $j<=$i/2; $j++){	#inner loop/condition to test if prime
+
+if($i % $j==0)			#checks if prime
+{
+$count++;
+$totalCount++;
+last;
+}
+}
+if($count==0)			#if prime print to screen
+{
+printf("%03d",$i);	
+print"\n";
+}
+}
+print "Total number of primes found: ".$totalCount."\n";	#print total primes found
+
+
